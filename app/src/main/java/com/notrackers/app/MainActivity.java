@@ -50,14 +50,12 @@ public class MainActivity extends Activity {
         cleanUrlLabel = findViewById(R.id.cleanUrlLabel);
         infoMessage = findViewById(R.id.infoMessage);
 
-        // Set up informational message with bold "noTrackers"
         String infoText = "Big Tech tracks what you share — and with whom — quietly building profiles that invade your privacy and that of those you share content with.<br/><br/>" +
                 "<b>noTrackers</b> helps you stop that.<br/><br/>" +
                 "When you share a link, choose <b>noTrackers</b> — we remove hidden tracking codes and give you a clean, private URL.<br/><br/>" +
                 "Share content, not your digital footprint.";
         infoMessage.setText(HtmlCompat.fromHtml(infoText, HtmlCompat.FROM_HTML_MODE_LEGACY));
 
-        // Handle incoming share intent
         Intent intent = getIntent();
         if (intent != null && Intent.ACTION_SEND.equals(intent.getAction())) {
             openedViaShare = true;
@@ -70,7 +68,6 @@ public class MainActivity extends Activity {
                 updateUIState();
             }
         } else {
-            // No URL from share intent, show initial state
             openedViaShare = false;
             updateUIState();
         }
@@ -94,7 +91,6 @@ public class MainActivity extends Activity {
         refreshButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Clear URL and reset to initial state
                 urlEditText.setText("");
                 cleanedUrl = null;
                 originalUrl = null;
@@ -127,7 +123,6 @@ public class MainActivity extends Activity {
 
     private void updateUIState() {
         if (hasCleanedUrl) {
-            // Show cleaned URL state
             cleanUrlLabel.setVisibility(View.VISIBLE);
             celebrationMessage.setVisibility(View.VISIBLE);
             securePrivacyButton.setVisibility(View.GONE);
@@ -137,9 +132,8 @@ public class MainActivity extends Activity {
             shareButton.setVisibility(View.VISIBLE);
             reportButton.setVisibility(View.VISIBLE);
             infoMessage.setVisibility(View.GONE);
-            urlEditText.setHint(null); // Remove hint when URL is displayed
+            urlEditText.setHint(null);
         } else {
-            // Show initial input state
             cleanUrlLabel.setVisibility(View.GONE);
             celebrationMessage.setVisibility(View.GONE);
             securePrivacyButton.setVisibility(View.VISIBLE);
@@ -150,7 +144,6 @@ public class MainActivity extends Activity {
             reportButton.setVisibility(View.GONE);
             urlEditText.setHint("Enter or paste URL here...");
             
-            // Show info message only when opened directly (not via share)
             if (!openedViaShare) {
                 infoMessage.setVisibility(View.VISIBLE);
             } else {
@@ -190,7 +183,6 @@ public class MainActivity extends Activity {
             Intent shareIntent = new Intent(Intent.ACTION_SEND);
             shareIntent.setType("text/plain");
             
-            // Build share text
             String shareText = url;
             if (spreadWordCheckBox.isChecked()) {
                 shareText = url + "\n\nI removed tracking urls by using the noTrackers app.";
