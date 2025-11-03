@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_matte_black">#0A0A0A</color>     <!-- true black with slight gray -->
+    <color name="silver_text">#D0D0D0</color>        <!-- polished silver -->
+    <color name="silver_dim">#8A8A8A</color>         <!-- dimmed silver -->
+    <color name="accent_cyan">#00E5FF</color>        <!-- neon cyan -->
+    <color name="accent_teal">#00C2A8</color>        <!-- teal fallback -->
+    <color name="accent_glow">#1A00E5FF</color>      <!-- soft glow for gradients -->
+    <color name="btn_green">#00C853</color>          <!-- "cleaned" success -->
+    <color name="btn_blue">#2196F3</color>           <!-- share -->
+    <color name="btn_orange">#FF9800</color>         <!-- report -->
+</resources>
+

@@ -1,0 +1,32 @@
+R_DEF: Internal format may change without notice
+local
+color accent_cyan
+color accent_glow
+color accent_teal
+color bg_matte_black
+color btn_blue
+color btn_green
+color btn_orange
+color silver_dim
+color silver_text
+drawable bg_matte_silver
+drawable btn_copy_green
+drawable btn_report_orange
+drawable btn_share_blue
+drawable btn_silver_glow
+drawable checkbox_dark
+drawable edittext_dark
+drawable ic_refresh
+id celebrationMessage
+id cleanUrlLabel
+id copyButton
+id infoMessage
+id refreshButton
+id reportButton
+id securePrivacyButton
+id shareButton
+id spreadWordCheckBox
+id urlEditText
+layout activity_main
+mipmap ic_launcher
+string app_name

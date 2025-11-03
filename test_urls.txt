@@ -1,0 +1,42 @@
+# noTrackers App - Comprehensive Test URLs
+# Test these URLs to verify tracking parameter removal
+
+# YouTube URLs
+https://youtu.be/cjeIz-n-hrE?si=ayWBOz-3ZKS3c_E7
+https://www.youtube.com/watch?v=cjeIz-n-hrE&si=ayWBOz-3ZKS3c_E7&utm_source=facebook
+https://youtu.be/abc123?si=xyz789&fbclid=123456&_ga=GA1.2.123456789
+
+# Spotify URLs
+https://open.spotify.com/track/abc123?si=xyz789&utm_source=twitter&_fbp=fb.1.123456789
+https://open.spotify.com/album/def456?si=uvw789&gclid=123456&mc_cid=abc123
+
+# Social Media URLs
+https://www.facebook.com/post/123?fbclid=123456&utm_medium=social
+https://www.instagram.com/p/abc123/?igshid=xyz789&utm_campaign=instagram
+https://twitter.com/user/status/123?twclid=123456&utm_source=twitter
+
+# E-commerce URLs
+https://shop.example.com/product/123?aff_id=123&ref=partner&utm_source=affiliate
+https://amazon.com/product/abc?tag=affiliate-20&utm_campaign=email&mc_eid=abc123
+
+# News/Content URLs
+https://news.example.com/article/123?utm_source=google&utm_medium=cpc&utm_campaign=news
+https://blog.example.com/post/456?utm_source=facebook&utm_content=blog&_ga=GA1.2.123456789
+
+# Email Marketing URLs
+https://example.com/newsletter?mc_cid=abc123&mc_eid=def456&utm_source=email
+https://example.com/campaign?utm_campaign=summer&utm_medium=email&_hsenc=abc123
+
+# Complex URLs with multiple trackers
+https://example.com/page?utm_source=facebook&utm_medium=social&utm_campaign=summer&fbclid=123456&gclid=789012&_ga=GA1.2.123456789&si=xyz789&ref=partner&aff_id=123
+
+# URLs that should NOT be modified (legitimate parameters)
+https://example.com/search?q=privacy&page=2&lang=en&id=123
+https://example.com/product/abc?sku=123&variant=red&size=large
+https://example.com/user/profile?user_id=123&tab=settings
+
+# Edge cases
+https://example.com/page?utm_source=&utm_medium=social
+https://example.com/page?utm_source=facebook&utm_medium=&utm_campaign=summer
+https://example.com/page?utm_source=facebook&utm_medium=social&utm_campaign=
+

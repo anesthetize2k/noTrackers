@@ -1,0 +1,4 @@
+com.notrackers.app.test.app-androidTest-0 C:\Users\skulkarni3\Documents\noTrackers\app\build\generated\res\resValues\androidTest\debug
+com.notrackers.app.test.app-mergeDebugAndroidTestResources-1 C:\Users\skulkarni3\Documents\noTrackers\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.notrackers.app.test.app-mergeDebugAndroidTestResources-2 C:\Users\skulkarni3\Documents\noTrackers\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.notrackers.app.test.app-merged_res-3 C:\Users\skulkarni3\Documents\noTrackers\app\build\intermediates\merged_res\debugAndroidTest
